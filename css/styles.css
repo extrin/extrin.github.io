@@ -1,55 +1,143 @@
 @font-face {
   font-family: opensans-regular;
-  src: url(/fonts/OpenSans-Regular.woff2) format("woff2"),
-  url(/fonts/OpenSans-Regular.woff) format("woff"),
-  url(/fonts/OpenSans-Regular.ttf) format("opentype");
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+  url(../fonts/OpenSans-Regular.woff) format("woff"),
+  url(../fonts/OpenSans-Regular.ttf) format("opentype");
 }
 
 @font-face {
   font-family: opensans-bold;
-  src: url(/fonts/OpenSans-Bold.woff2) format("woff2"),
-  url(/fonts/OpenSans-Bold.woff) format("woff")
-  url(/fonts/OpenSans-Bold.ttf) format("opentype");
+  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+  url(../fonts/OpenSans-Bold.woff) format("woff")
+  url(../fonts/OpenSans-Bold.ttf) format("opentype");
 }
 
-header {
+.header-content {
   display: flex;
-  background-color: violet;
-  background-image: url("/images/football_767.jpg");
-  background-blend-mode: darken;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  background:
+    linear-gradient(
+      rgba(155, 45, 255, 0.9),
+      rgba(155, 45, 255, 0.9)
+    ),
+    url("../images/football_767.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header h1 {
+.header-content h1 {
   font-family: opensans-bold;
 }
 
-.ios-app-button, .google-app-button {
-  width: 50px;
-  border-radius: 25%;
-  background-color: magenta;
-  font-family: opensans-regular;
+.header-logo-text, .footer-logo-text {
+  max-width: 100px;
 }
 
-main {
+.buttons-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ios-app-button, .google-app-button {
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: magenta;
+  font-family: opensans-regular;
+  font-size: 0.7em;
+}
+
+.apple-logo, .google-logo {
+  width: 20%;
+}
+
+.store-name {
+  font-family: opensans-bold;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    linear-gradient(
+      rgba(155, 45, 255, 0.9),
+      rgba(155, 45, 255, 0.9)
+    ),
+    url("../images/game_767.jpg");
+}
+
+.footer-logo-image {
+  max-width: 64px;
+  padding: 1%;
+  background-color: magenta;
+  border-radius: 25%;
 }
 
 @media(min-width: 641px) {
-  header {
-    background-image: url("/images/football_1280.jpg");
+  .header-content {
+    background:
+      linear-gradient(
+        rgba(155, 45, 255, 0.9),
+        rgba(155, 45, 255, 0.9)
+      ),
+      url("../images/football_1280.jpg");
+  }
+
+  .footer-content {
+    background:
+      linear-gradient(
+        rgba(155, 45, 255, 0.9),
+        rgba(155, 45, 255, 0.9)
+      ),
+      url("../images/game_1280.jpg");
   }
 }
 
 @media(min-width: 961px) {
-  header {
-    background-image: url("/images/football_1920.jpg");
+  .header-content {
+    background:
+      linear-gradient(
+        rgba(155, 45, 255, 0.9),
+        rgba(155, 45, 255, 0.9)
+      ),
+      url("../images/football_1920.jpg");
   }
-}
 
-@media(min-width: 1920px) {
+  .card-text, .card-picture {
+    box-sizing: border-box;
+  }
 
+  .card:nth-child(3n+2) {
+    align-self: center;
+  }
+
+  .card-text {
+    padding-left: 50px;
+  }
+
+  .footer-content {
+    background:
+      linear-gradient(
+        rgba(155, 45, 255, 0.9),
+        rgba(155, 45, 255, 0.9)
+      ),
+      url("../images/game_1920.jpg");
+  }
 }
