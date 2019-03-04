@@ -11,3 +11,45 @@
   url(/fonts/OpenSans-Bold.woff) format("woff")
   url(/fonts/OpenSans-Bold.ttf) format("opentype");
 }
+
+header {
+  display: flex;
+  background-color: violet;
+  background-image: url("/images/football_767.jpg");
+  background-blend-mode: darken;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+header h1 {
+  font-family: opensans-bold;
+}
+
+.ios-app-button, .google-app-button {
+  width: 50px;
+  border-radius: 25%;
+  background-color: magenta;
+  font-family: opensans-regular;
+}
+
+main {
+  display: flex;
+}
+
+@media(min-width: 641px) {
+  header {
+    background-image: url("/images/football_1280.jpg");
+  }
+}
+
+@media(min-width: 961px) {
+  header {
+    background-image: url("/images/football_1920.jpg");
+  }
+}
+
+@media(min-width: 1920px) {
+
+}
