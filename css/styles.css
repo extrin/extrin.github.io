@@ -2,14 +2,14 @@
   font-family: "opensans-regular";
   src: url(../fonts/OpenSans-Regular.woff2) format("woff2"),
   url(../fonts/OpenSans-Regular.woff) format("woff"),
-  url(../fonts/OpenSans-Regular.ttf) format("opentype");
+  url(../fonts/OpenSans-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "opensans-bold";
   src: url(../fonts/OpenSans-Bold.woff2) format("woff2"),
   url(../fonts/OpenSans-Bold.woff) format("woff")
-  url(../fonts/OpenSans-Bold.ttf) format("opentype");
+  url(../fonts/OpenSans-Bold.ttf) format("truetype");
 }
 
 .header__content {
@@ -25,14 +25,16 @@
   background-size: cover;
 }
 
-.header__content h1 {
+h1 {
   font-family: "opensans-bold";
   font-size: 4em;
 }
 
 .header__logo__text, .footer__logo__text {
   max-width: 100px;
+  margin: 5px auto;
   fill: #ffffff;
+  align-self: center;
 }
 
 .be__recruited {
@@ -51,14 +53,16 @@
 
 .buttons__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .ios__app__button, .google__app__button {
-  width: 45%;
-  padding: 10px;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   box-sizing: border-box;
   border-radius: 25px;
   background-color: #5e42b0;
@@ -66,14 +70,19 @@
   font-size: 0.7em;
 }
 
+.button__text {
+  padding: 5px 10px;
+}
+
 .apple__logo, .google__logo {
-  width: 20%;
-  align-self: center;
+  width: 2rem;
+  margin-left: 0.5rem;
   fill: #ffffff;
 }
 
 .store__name {
   font-family: "opensans-bold";
+  font-weight: 600;
 }
 
 .main {
@@ -89,6 +98,15 @@
 
 .picture__players {
   order: 2;
+}
+
+.list__number {
+  margin-right: 0.1rem;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #9173e6;
+  font-family: "opensans-bold";
+  font-weight: bolder;
 }
 
 .section__cards {
@@ -118,12 +136,35 @@
 
 .footer__logo__image {
   flex-basis: 64px;
+  align-self: center;
   max-width: 130px;
-  padding: 5px;
-  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
   box-sizing: border-box;
   fill: #ffffff;
   background: linear-gradient(#7756d7ff, #50379bff);
+}
+
+.footer__text {
+  align-self: center;
+  flex-basis: 300px;
+  margin: 0 10px;
+}
+
+@media (min-width: 641px) {
+  .buttons__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ios__app__button {
+    margin-right: 0.5rem;
+  }
+
+  .google__app__button {
+    margin-left: 0.5rem;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -151,12 +192,17 @@
     box-sizing: border-box;
   }
 
+  .card__picture img {
+    max-width: 50vw;
+  }
+
   .card:nth-child(3n+2) {
     align-self: center;
   }
 
   .card__text {
     padding-left: 50px;
+    align-self: center;
   }
 
   .footer__content {
