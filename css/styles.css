@@ -12,76 +12,86 @@
   url(../fonts/OpenSans-Bold.ttf) format("truetype");
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+}
+
 .header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
   color: #ffffff;
-  background:
-    linear-gradient(#0a0e34ef, #0a0e34ef),
-    url("../images/football_767.jpg");
-  background-position: center;
+  background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  background-color: #0a0e34ef;
   background-size: cover;
 }
 
-h1 {
-  font-family: "opensans-bold";
-  font-size: 4em;
+.header__content h1 {
+  font-family: "opensans-regular";
+  font-size: 2rem;
+  letter-spacing: 0.25em;
 }
 
 .header__logo__text, .footer__logo__text {
-  max-width: 100px;
-  margin: 5px auto;
+  width: 13rem;
   fill: #ffffff;
-  align-self: center;
+}
+
+.header__logo__text {
+  margin-top: 1rem;
 }
 
 .be__recruited {
   align-self: flex-start;
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 13.5rem;
 }
 
 .play__college__sports {
-  align-self: flex-end;
-  margin-right: 10%;
-  margin-top: 0;
-  margin-bottom: 5%;
+  margin-left: 4.4rem;
+  margin-top: 1.5rem;
 }
 
 .buttons__container {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin-top: 9rem;
+  margin-bottom: 7rem;
 }
 
 .ios__app__button, .google__app__button {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 10rem;
+  justify-content: center;
+  width: 100%;
   padding: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   box-sizing: border-box;
   border-radius: 25px;
   background-color: #5e42b0;
   font-family: "opensans-regular";
-  font-size: 0.7em;
-}
-
-.button__text {
-  padding: 5px 10px;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .apple__logo, .google__logo {
   width: 2rem;
-  margin-left: 0.5rem;
+  margin-right: 1rem;
   fill: #ffffff;
 }
 
+.button__text {
+  white-space: pre;
+}
+
 .store__name {
-  font-family: "opensans-bold";
   font-weight: 600;
 }
 
@@ -90,14 +100,8 @@ h1 {
   flex-direction: column;
 }
 
-.section__athlets, .section__players {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.picture__players {
-  order: 2;
+.picture__players, .picture__athlets {
+  max-width: 100%;
 }
 
 .list__number {
@@ -113,6 +117,10 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.card__picture img{
+  max-width: 100%;
 }
 
 .footer__content {
@@ -150,64 +158,4 @@ h1 {
   align-self: center;
   flex-basis: 300px;
   margin: 0 10px;
-}
-
-@media (min-width: 641px) {
-  .buttons__container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .ios__app__button {
-    margin-right: 0.5rem;
-  }
-
-  .google__app__button {
-    margin-left: 0.5rem;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-  .header__content {
-    background:
-      linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/football_1280.jpg");
-  }
-
-  .footer__content {
-    background:
-      linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/game_1280.jpg");
-  }
-}
-
-@media (min-width: 961px) {
-  .header__content {
-    background:
-      linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/football_1920.jpg");
-  }
-
-  .card__text, .card__picture {
-    box-sizing: border-box;
-  }
-
-  .card__picture img {
-    max-width: 50vw;
-  }
-
-  .card:nth-child(3n+2) {
-    align-self: center;
-  }
-
-  .card__text {
-    padding-left: 50px;
-    align-self: center;
-  }
-
-  .footer__content {
-    background:
-      linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/game_1920.jpg");
-  }
 }
