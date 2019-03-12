@@ -1,0 +1,8 @@
+<svg viewBox="0 0 320 1010" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect class="svg__white__rect" height="30.19%" width="100%"  fill="#ffffff"/>
+    <rect class="svg__lightgrey__rect" height="21.28%" width="100%"  fill="#fafafa" y="306"/>
+    <rect class="svg__grey__rect" height="25.74%" width="100%"  fill="#f5f4f9" y="521"/>
+    <rect class="svg__white_rect" height="22.77%" width="100%" fill="#5e3db3" y="781"/>
+  </g>
+</svg>
