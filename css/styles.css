@@ -41,7 +41,7 @@ body {
 
 .header__logo__text, .footer__logo__text {
   width: 13rem;
-  fill: #ffffff;
+  fill: #000000;
 }
 
 .header__logo__text {
@@ -84,7 +84,7 @@ body {
 .apple__logo, .google__logo {
   width: 2rem;
   margin-right: 1rem;
-  fill: #ffffff;
+  fill: #000000;
 }
 
 .button__text {
@@ -98,35 +98,164 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-family: "opensans-regular";
 }
 
-.picture__players, .picture__athlets {
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__athlets, .section__players {
+  padding: 2rem;
+}
+
+.header__athlets, .header__players {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #e7e7e7;
+}
+
+.header__athlets {
+  margin-top: 0.5rem;
+}
+
+.picture__athlets, .picture__players {
+  align-self: center;
+}
+
+.picture__players img, .picture__athlets img {
   max-width: 100%;
 }
 
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  color: #c1c1c1;
+}
+
+dd {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
+
+dt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .list__number {
-  margin-right: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
   color: #000000;
-  text-decoration: underline;
-  text-decoration-color: #9173e6;
-  font-family: "opensans-bold";
+  font-size: 1rem;
   font-weight: bolder;
 }
 
-.section__cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.rectangle {
+  width: 100%;
+  height: 0.4em;
+  border-radius: 0.2rem;
+  background-color: #5e3db3;
+}
+
+.growth .rectangle {
+  background-color: #ffffff;
+}
+
+.connection__dd, .collaboration__dd {
+  margin-bottom: 9rem;
+}
+
+.growth__dd {
+  padding-bottom: 5.5rem;
+  color: #ffffff;
+}
+
+.list__players {
+  margin-top: 6rem;
+}
+
+.list__players .growth {
+  background-color: #090a36;
+}
+
+.list__players .growth .list__number {
+  color: #8761e0;
+}
+
+.card__text, .card__number {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card__text {
+  padding-bottom: 7.5rem;
+}
+
+.card__picture {
+  position: relative;
 }
 
 .card__picture img{
   max-width: 100%;
 }
 
+.card__number {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+  padding: 3rem;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: #5e3db3;
+  color: #f5f6f7;
+  box-sizing: border-box;
+}
+
+.number__rectangle {
+  width: 100%;
+  height: 0.4em;
+
+  border-radius: 0.2rem;
+  background-color: #8f79ca;
+}
+
+.card__header {
+  font-size: 2rem;
+  color: #e7e7e7;
+}
+
+.card__paragraph {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
 .footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  font-family: "opensans-regular";
+
   background:
     linear-gradient(#0a0e34ef, #0a0e34ef),
     url("../images/game_767.jpg");
@@ -138,24 +267,34 @@ body {
 
 .footer__download__app {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__logo__image {
-  flex-basis: 64px;
-  align-self: center;
-  max-width: 130px;
+  max-width: 7rem;
   padding: 10px;
-  margin-top: 10px;
-  border-radius: 15px;
+  margin-top: 10rem;
+  border-radius: 1.5rem;
   box-sizing: border-box;
   fill: #ffffff;
   background: linear-gradient(#7756d7ff, #50379bff);
 }
 
-.footer__text {
-  align-self: center;
-  flex-basis: 300px;
-  margin: 0 10px;
+.footer__header {
+  margin-top: 6rem;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer__paragraph {
+  margin-top: 1.2rem;
+
+  font-size: 1rem;
+
+  color: #9b8dc3;
+  text-align: center;
 }
