@@ -99,7 +99,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
   font-family: "opensans-regular";
 }
 
@@ -109,16 +108,13 @@ article {
 }
 
 .section__athlets {
-  width: 100%;
-  background: url("../svg/section_athlets_background.svg");
+  padding: 2rem;
 }
 
 .header__athlets {
   margin-top: 0.5rem;
-  font-stretch: expanded;
   font-size: 3.5rem;
   font-weight: bolder;
-  letter-spacing: 0.14em;
   color: #e7e7e7;
 }
 
@@ -127,17 +123,17 @@ article {
   align-self: center;
 }
 
-.list__athlets h3 {
+h3 {
   font-size: 1.8rem;
-  letter-spacing: 0.3333em;
+  letter-spacing: 0.2em;
   color: #c1c1c1;
 }
 
-.list__athlets dd {
+dd {
   margin-right: 0px;
   margin-left: 0px;
   margin-top: 1.2rem;
-  text-align: justify;
+  font-weight: bold;
 }
 
 dt {
@@ -162,6 +158,10 @@ dt {
   background-color: #5e3db3;
 }
 
+.growth .rectangle {
+  background-color: #ffffff;
+}
+
 .connection__dd, .collaboration__dd {
   margin-bottom: 9rem;
 }
@@ -169,6 +169,20 @@ dt {
 .growth__dd {
   margin-bottom: 5.5rem;
   color: #ffffff;
+}
+
+.section__players {
+  padding: 2rem;
+}
+
+.header__players {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #e7e7e7;
+}
+
+.list__players {
+  margin-top: 6rem;
 }
 
 .section__cards {
