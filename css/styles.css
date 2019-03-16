@@ -107,15 +107,18 @@ article {
   flex-direction: column;
 }
 
-.section__athlets {
+.section__athlets, .section__players {
   padding: 2rem;
+}
+
+.header__athlets, .header__players {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #e7e7e7;
 }
 
 .header__athlets {
   margin-top: 0.5rem;
-  font-size: 3.5rem;
-  font-weight: bolder;
-  color: #e7e7e7;
 }
 
 .picture__players, .picture__athlets {
@@ -169,16 +172,6 @@ dt {
 .growth__dd {
   margin-bottom: 5.5rem;
   color: #ffffff;
-}
-
-.section__players {
-  padding: 2rem;
-}
-
-.header__players {
-  font-size: 3.5rem;
-  font-weight: bolder;
-  color: #e7e7e7;
 }
 
 .list__players {
