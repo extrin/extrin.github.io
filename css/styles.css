@@ -156,8 +156,8 @@ dt {
 
 .rectangle {
   width: 100%;
-  height: 0.5em;
-  border-radius: 0.25rem;
+  height: 0.4em;
+  border-radius: 0.2rem;
   background-color: #5e3db3;
 }
 
@@ -170,7 +170,7 @@ dt {
 }
 
 .growth__dd {
-  margin-bottom: 5.5rem;
+  padding-bottom: 5.5rem;
   color: #ffffff;
 }
 
@@ -178,14 +178,69 @@ dt {
   margin-top: 6rem;
 }
 
-.section__cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.list__players .growth {
+  background-color: #090a36;
+}
+
+.list__players .growth .list__number {
+  color: #8761e0;
+}
+
+.card__text, .card__number {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card__text {
+  padding-bottom: 7.5rem;
+}
+
+.card__picture {
+  position: relative;
 }
 
 .card__picture img{
   max-width: 100%;
+}
+
+.card__number {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  width: 7rem;
+  height: 7rem;
+  padding: 3rem;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  background-color: #5e3db3;
+  color: #f5f6f7;
+  box-sizing: border-box;
+}
+
+.number__rectangle {
+  width: 100%;
+  height: 0.4em;
+
+  border-radius: 0.2rem;
+  background-color: #8f79ca;
+}
+
+.card__header {
+  font-size: 2rem;
+  color: #e7e7e7;
+}
+
+.card__paragraph {
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .footer__content {
