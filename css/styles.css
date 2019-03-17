@@ -25,6 +25,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+
+  font-family: "opensans-regular";
+
   color: #ffffff;
   background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg");
   background-repeat: no-repeat;
@@ -33,14 +36,9 @@ body {
   background-size: cover;
 }
 
-.header__content h1 {
-  font-family: "opensans-regular";
-  font-size: 2rem;
-  letter-spacing: 0.25em;
-}
-
 .header__logo__text, .footer__logo__text {
   width: 13rem;
+
   fill: #000000;
 }
 
@@ -52,11 +50,15 @@ body {
   align-self: flex-start;
   margin-bottom: 1.5rem;
   margin-top: 13.5rem;
+
+  font-size: 3rem;
 }
 
 .play__college__sports {
   margin-left: 4.4rem;
   margin-top: 1.5rem;
+
+  font-size: 2.8rem;
 }
 
 .buttons__container {
@@ -73,32 +75,41 @@ body {
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   box-sizing: border-box;
+
+  font-family: "opensans-regular";
+  font-size: 0.8rem;
+
   border-radius: 25px;
   background-color: #5e42b0;
-  font-family: "opensans-regular";
-  font-size: 0.7rem;
   text-decoration: none;
   color: inherit;
 }
 
+.ios__app__button {
+  padding-left: 3rem;
+}
+
 .apple__logo, .google__logo {
-  width: 2rem;
+  flex-shrink: 0;
+  flex-basis: 2rem;
   margin-right: 1rem;
+
   fill: #000000;
 }
 
-.button__text {
-  white-space: pre;
+.apple__button__text {
+  width: 9rem;
 }
 
-.store__name {
-  font-weight: 600;
+.google__button__text {
+  width: 6rem;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   font-family: "opensans-regular";
 }
 
@@ -111,14 +122,26 @@ article {
   padding: 2rem;
 }
 
+.section__athlets {
+  background-image: linear-gradient(#ffffff 30.198%, #fafafa 30.198%, #fafafa 51.4851%, #f5f4f9 51.4851%, #f5f4f9 77.2277%, #5e3db3 77.2277%);
+}
+
+.section__players {
+  background-image: linear-gradient(#ffffff 30.198%, #fafafa 30.198%, #fafafa 51.4851%, #f5f4f9 51.4851%, #f5f4f9 77.2277%, #090a36 77.2277%);
+}
+
 .header__athlets, .header__players {
-  font-size: 3.5rem;
-  font-weight: bolder;
+  font-size: 5.5rem;
+
   color: #e7e7e7;
 }
 
 .header__athlets {
   margin-top: 0.5rem;
+}
+
+.header__players {
+  margin: 0;
 }
 
 .picture__athlets, .picture__players {
@@ -130,16 +153,17 @@ article {
 }
 
 h3 {
-  font-size: 1.8rem;
-  letter-spacing: 0.2em;
+  font-size: 2.3rem;
+
   color: #c1c1c1;
 }
 
 dd {
   margin-right: 0;
   margin-left: 0;
-  margin-top: 1.2rem;
-  font-weight: bold;
+  margin-top: 1.5rem;
+
+  font-size: 1.5rem;
 }
 
 dt {
@@ -152,14 +176,17 @@ dt {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
-  color: #000000;
-  font-size: 1rem;
+
+  font-size: 1.4rem;
   font-weight: bolder;
+
+  color: #000000;
 }
 
 .rectangle {
   width: 100%;
   height: 0.4em;
+
   border-radius: 0.2rem;
   background-color: #5e3db3;
 }
@@ -174,15 +201,12 @@ dt {
 
 .growth__dd {
   padding-bottom: 5.5rem;
+
   color: #ffffff;
 }
 
 .list__players {
   margin-top: 6rem;
-}
-
-.list__players .growth {
-  background-color: #090a36;
 }
 
 .list__players .growth .list__number {
@@ -220,7 +244,7 @@ dt {
   align-items: center;
   justify-content: center;
 
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
 
   background-color: #5e3db3;
@@ -237,12 +261,13 @@ dt {
 }
 
 .card__header {
-  font-size: 2rem;
+  font-size: 2.8rem;
+
   color: #e7e7e7;
 }
 
 .card__paragraph {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bolder;
 }
 
@@ -276,8 +301,9 @@ dt {
   max-width: 7rem;
   padding: 10px;
   margin-top: 10rem;
-  border-radius: 1.5rem;
   box-sizing: border-box;
+
+  border-radius: 1.5rem;
   fill: #ffffff;
   background: linear-gradient(#7756d7ff, #50379bff);
 }
@@ -285,15 +311,15 @@ dt {
 .footer__header {
   margin-top: 6rem;
   margin-bottom: 0;
-  font-size: 2.4rem;
+  
+  font-size: 3.2rem;
   font-weight: bold;
-  letter-spacing: 2px;
 }
 
 .footer__paragraph {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 
-  font-size: 1rem;
+  font-size: 1.4rem;
 
   color: #9b8dc3;
   text-align: center;
