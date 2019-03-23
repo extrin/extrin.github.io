@@ -324,16 +324,17 @@ dt {
   text-align: center;
 }
 
-@media (min-width: 640px) {
-  .header__logo__text, .footer__logo__text {
-    width: 21rem;
+@media (min-width: 641px) {
+
+  html {
+    font-size: 100%;
   }
 
   .ios__app__button, .google__app__button {
     width: 40%;
     padding: 1em;
 
-    font-size: 1.4rem;
+    font-size: 1.14rem;
 
     border-radius: 3em;
   }
@@ -355,40 +356,40 @@ dt {
     margin-left: 6%;
     margin-bottom: 0;
 
-    font-size: 7rem;
+    font-size: 4.375rem;
   }
 
   .play__college__sports {
     margin-right: 7%;
     margin-left: 21.6%;
     margin-top: 0;
-    margin-bottom: 22rem;
+    margin-bottom: 13.75rem;
 
-    font-size: 6.4rem;
+    font-size: 4rem;
   }
 
   .header__athlets, .header__players, .card__header, .footer__header {
-    font-size: 8.81rem;
+    font-size: 5.5rem;
   }
 
   h3 {
-    font-size: 3.2rem;
+    font-size: 2rem;
   }
 
   dd {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 
   .list__number {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
   }
 
   .card__number, .card__paragraph {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
 
   .footer__paragraph {
-    font-size: 3.96rem;
+    font-size: 2.475rem;
   }
 
   .buttons__container {
@@ -397,7 +398,7 @@ dt {
   }
 
   .header__content {
-    padding: 3rem;
+    padding: 3.9%;
 
     background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg");
   }
