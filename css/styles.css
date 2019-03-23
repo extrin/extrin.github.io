@@ -39,7 +39,7 @@ body {
 .header__logo__text, .footer__logo__text {
   width: 13rem;
 
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .header__logo__text {
@@ -93,7 +93,7 @@ body {
   flex-basis: 2rem;
   margin-right: 1rem;
 
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .apple__button__text {
