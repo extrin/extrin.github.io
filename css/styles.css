@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .header__content {
@@ -39,7 +39,7 @@ body {
 .header__logo__text, .footer__logo__text {
   width: 13rem;
 
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .header__logo__text {
@@ -90,11 +90,10 @@ body {
 }
 
 .apple__logo, .google__logo {
-  flex-shrink: 0;
-  flex-basis: 2rem;
+  max-width: 2rem;
   margin-right: 1rem;
 
-  fill: #000000;
+  fill: #ffffff;
 }
 
 .apple__button__text {
@@ -106,16 +105,7 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   font-family: "opensans-regular";
-}
-
-article {
-  display: flex;
-  flex-direction: column;
 }
 
 .section__athlets, .section__players {
@@ -127,7 +117,7 @@ article {
 }
 
 .section__players {
-  background-image: linear-gradient(#ffffff 30.198%, #fafafa 30.198%, #fafafa 51.4851%, #f5f4f9 51.4851%, #f5f4f9 77.2277%, #090a36 77.2277%);
+  background-image: linear-gradient(#ffffff 30.198%, #fafafa 30.198%, #fafafa 55%, #f5f4f9 55%, #f5f4f9 77.2277%, #090a36 77.2277%);
 }
 
 .header__athlets, .header__players {
@@ -144,11 +134,9 @@ article {
   margin: 0;
 }
 
-.picture__athlets, .picture__players {
-  align-self: center;
-}
-
 .picture__players img, .picture__athlets img {
+  display: block;
+  margin: auto;
   max-width: 100%;
 }
 
@@ -311,7 +299,7 @@ dt {
 .footer__header {
   margin-top: 6rem;
   margin-bottom: 0;
-  
+
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -323,4 +311,170 @@ dt {
 
   color: #9b8dc3;
   text-align: center;
+}
+
+@media (min-width: 641px) {
+
+  html {
+    font-size: 100%;
+  }
+
+  .ios__app__button, .google__app__button {
+    width: 40%;
+    padding: 1em;
+
+    font-size: 1.14rem;
+
+    border-radius: 3em;
+  }
+
+  .apple__logo, .google__logo {
+    flex-basis: 3em;
+    margin-right: 1em;
+  }
+
+  .apple__button__text {
+    flex-basis: 10em;
+  }
+
+  .google__button__text {
+    flex-basis: 9em;
+  }
+
+  .be__recruited {
+    margin-left: 6%;
+    margin-bottom: 0;
+
+    font-size: 4.375rem;
+  }
+
+  .play__college__sports {
+    margin-right: 7%;
+    margin-left: 21.6%;
+    margin-top: 0;
+    margin-bottom: 13.75rem;
+
+    font-size: 4rem;
+  }
+
+  .section__athlets, .section__players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
+
+  .section__athlets {
+    background-image: linear-gradient(#ffffff 45%, #f5f4f9 45%, #f5f4f9 75%, #5e3db3 75%);
+  }
+
+  .section__players {
+    background-image: linear-gradient(#ffffff 49%, #f5f4f9 49%, #f5f4f9 75%, #090a36 75%);
+  }
+
+  .connection__dd, .collaboration__dd {
+    margin-bottom: 5rem;
+  }
+
+  .growth__dd {
+    padding-bottom: 0;
+  }
+
+  .header__athlets, .header__players, .card__header, .footer__header {
+    font-size: 5.5rem;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article__athlets {
+    padding-right: 1.5rem;
+  }
+
+  .article__players, .header__players {
+    padding-left: 1.5rem;
+  }
+
+  .header__athlets {
+    margin-left: 42vw;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .header__athlets, .header__players {
+    margin-top: 3rem;
+  }
+
+  .picture__athlets {
+    flex: 1 0 content;
+    margin-top: -5.5rem;
+  }
+
+  .list__athlets {
+    flex: 1 1 60%;
+  }
+
+  .list__players {
+    flex-basis: 45%;
+    margin-top: 1rem;
+  }
+
+  .picture__players {
+    order: 2;
+    max-width: 100%;
+    margin-top: -11vh;
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  dd {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .list__number {
+    margin-top: 0;
+    font-size: 1.125rem;
+  }
+
+  .card__number, .card__paragraph {
+    font-size: 1.5rem;
+  }
+
+  .card__header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .card__text {
+    padding-bottom: 5.5rem;
+  }
+
+  .footer__content {
+    padding: 1.5rem;
+  }
+
+  .footer__paragraph {
+    font-size: 2.475rem;
+  }
+
+  .buttons__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header__content {
+    padding: 3.9%;
+
+    background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg");
+  }
 }
