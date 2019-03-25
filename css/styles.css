@@ -323,7 +323,7 @@ dt {
     width: 40%;
     padding: 1em;
 
-    font-size: 1.14rem;
+    font-size: 0.875rem;
 
     border-radius: 3em;
   }
@@ -494,6 +494,10 @@ dt {
       url("../images/game_1920.jpg");
   }
 
+  .google__app__button, .ios__app__button {
+    max-width: 19.375rem;
+  }
+
   .be__recruited {
     font-size: 6.1948rem;
   }
@@ -511,7 +515,41 @@ dt {
   }
 
   .footer__paragraph {
+    margin: inherit;
     font-size: 1.875rem;
+  }
+
+  .footer__download__app {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 12.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__logo__image {
+    max-width: 8.43rem;
+    flex-basis: 15%;
+    margin-top: inherit;
+    margin-right: 2.75rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .footer__header {
+    margin-top: inherit;
+  }
+
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__logo__text {
+    max-width: 11.75rem;
+    margin-top: 12.5rem;
+    margin-bottom: 2.875rem;
   }
 
 }
