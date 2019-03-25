@@ -477,4 +477,41 @@ dt {
 
     background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg");
   }
+
+  .footer__content {
+    background: linear-gradient(#0a0e34ef, #0a0e34ef),
+      url("../images/game_1280.jpg");
+  }
+}
+
+@media (min-width: 961px) {
+  .header__content {
+    background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1920.jpg");
+  }
+
+  .footer__content {
+    background: linear-gradient(#0a0e34ef, #0a0e34ef),
+      url("../images/game_1920.jpg");
+  }
+
+  .be__recruited {
+    font-size: 6.1948rem;
+  }
+
+  .play__college__sports {
+    font-size: 5.625rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  dd {
+    font-size: 1.25rem;
+  }
+
+  .footer__paragraph {
+    font-size: 1.875rem;
+  }
+
 }
