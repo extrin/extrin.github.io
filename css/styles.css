@@ -29,10 +29,7 @@ body {
   font-family: "opensans-regular";
 
   color: #ffffff;
-  background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: #0a0e34ef;
+  background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg") fixed #0a0e34ef top no-repeat;
   background-size: cover;
 }
 
@@ -269,11 +266,8 @@ dt {
 
   font-family: "opensans-regular";
 
-  background:
-    linear-gradient(#0a0e34ef, #0a0e34ef),
-    url("../images/game_767.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(#0a0e34ef, #0a0e34ef),
+    url("../images/game_767.jpg") fixed #0a0e34ef top no-repeat;
   background-size: cover;
   color: #ffffff;
 }
@@ -479,24 +473,29 @@ dt {
   .header__content {
     padding: 3.9%;
 
-    background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg");
+    background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg")fixed #0a0e34ef top no-repeat;
+    background-size: cover;
   }
 
   .footer__content {
     background: linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/game_1280.jpg");
+      url("../images/game_1280.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
   }
 }
 
 @media (min-width: 961px) {
   .header__content {
     padding: 50px;
-    background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1920.jpg");
+
+    background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1920.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
   }
 
   .footer__content {
     background: linear-gradient(#0a0e34ef, #0a0e34ef),
-      url("../images/game_1920.jpg");
+      url("../images/game_1920.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
   }
 
   .header__logo__text {
@@ -511,6 +510,7 @@ dt {
   .be__recruited {
     margin-top: 18.125rem;
     margin-left: 8.75rem;
+    
     font-size: 6.1948rem;
   }
 
@@ -519,6 +519,7 @@ dt {
     margin-right: 10vw;
     margin-left: 14vw;
     align-self: flex-end;
+
     font-size: 5.625rem;
   }
 
@@ -613,6 +614,7 @@ dt {
 
   .footer__paragraph {
     margin: inherit;
+
     font-size: 1.875rem;
   }
 
