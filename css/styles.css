@@ -575,11 +575,11 @@ dt {
   .section__cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    justify-content: space-between;
   }
 
   .card__picture {
-    max-width: 50%;
+    flex-basis: 50%;
     margin: inherit;
   }
 
@@ -587,32 +587,61 @@ dt {
     align-self: center;
     margin-left: -4rem;
     margin-top: -4rem;
+    margin-right: 1rem;
+    margin-bottom: inherit;
   }
 
   .card__text {
-    flex-basis: 45.5%;
+    flex-basis: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: baseline;
-    margin: inherit;
-    padding: inherit;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
 
   .card__header {
-    margin: inherit;
+    margin: 0;
   }
 
-  .card__text, .card__number, .card__picture {
-    order: initial;
+  .card:nth-child(1) {
+    order: 1;
   }
 
-  .card__text:nth-of-type(2) {
+  .card:nth-child(2) {
+    order: 2;
+  }
+
+  .card:nth-child(3) {
+    order: 3;
+  }
+
+  .card:nth-child(4) {
     order: 6;
+
   }
 
-  .card__picture:nth-of-type(2) {
+  .card:nth-child(5) {
+    order: 5;
+    margin-right: -7rem;
+  }
+
+  .card:nth-child(6) {
     order: 4;
+    margin-left: 2vw;
+  }
+
+  .card:nth-child(7) {
+    order: 7;
+  }
+
+  .card:nth-child(8) {
+    order: 8;
+  }
+
+  .card:nth-child(9) {
+    order: 9;
   }
 
   .footer__paragraph {
