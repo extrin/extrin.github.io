@@ -18,6 +18,15 @@ html {
 
 body {
   margin: auto;
+
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+body::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .header__content {
@@ -68,7 +77,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   box-sizing: border-box;
@@ -87,7 +95,7 @@ body {
 }
 
 .apple__logo, .google__logo {
-  max-width: 2rem;
+  width: 2rem;
   margin-right: 1rem;
 
   fill: #ffffff;
@@ -207,11 +215,7 @@ dt {
   padding-bottom: 7.5rem;
 }
 
-.card__picture {
-  position: relative;
-}
-
-.card__picture img{
+.card__picture img {
   max-width: 100%;
 }
 
@@ -510,7 +514,7 @@ dt {
   .be__recruited {
     margin-top: 18.125rem;
     margin-left: 8.75rem;
-    
+
     font-size: 6.1948rem;
   }
 
@@ -531,7 +535,6 @@ dt {
   }
 
   .header__athlets {
-    width: 100%;
     margin-bottom: 6.25rem;
     margin-top: 5.1rem;
     margin-left: 30vw;
@@ -576,7 +579,7 @@ dt {
   }
 
   .card__picture {
-    flex-basis: 50%;
+    max-width: 50%;
     margin: inherit;
   }
 
