@@ -18,6 +18,15 @@ html {
 
 body {
   margin: auto;
+
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+body::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .header__content {
@@ -29,10 +38,7 @@ body {
   font-family: "opensans-regular";
 
   color: #ffffff;
-  background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: #0a0e34ef;
+  background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_767.jpg") fixed #0a0e34ef top no-repeat;
   background-size: cover;
 }
 
@@ -71,7 +77,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   box-sizing: border-box;
@@ -90,7 +95,7 @@ body {
 }
 
 .apple__logo, .google__logo {
-  max-width: 2rem;
+  width: 2rem;
   margin-right: 1rem;
 
   fill: #ffffff;
@@ -210,11 +215,7 @@ dt {
   padding-bottom: 7.5rem;
 }
 
-.card__picture {
-  position: relative;
-}
-
-.card__picture img{
+.card__picture img {
   max-width: 100%;
 }
 
@@ -269,11 +270,8 @@ dt {
 
   font-family: "opensans-regular";
 
-  background:
-    linear-gradient(#0a0e34ef, #0a0e34ef),
-    url("../images/game_767.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(#0a0e34ef, #0a0e34ef),
+    url("../images/game_767.jpg") fixed #0a0e34ef top no-repeat;
   background-size: cover;
   color: #ffffff;
 }
@@ -323,9 +321,13 @@ dt {
     width: 40%;
     padding: 1em;
 
-    font-size: 1.14rem;
+    font-size: 0.875rem;
 
     border-radius: 3em;
+  }
+
+  .ios__app__button {
+    margin-right: 2.5rem;
   }
 
   .apple__logo, .google__logo {
@@ -469,12 +471,216 @@ dt {
 
   .buttons__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .header__content {
     padding: 3.9%;
 
-    background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg");
+    background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1280.jpg")fixed #0a0e34ef top no-repeat;
+    background-size: cover;
   }
+
+  .footer__content {
+    background: linear-gradient(#0a0e34ef, #0a0e34ef),
+      url("../images/game_1280.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 961px) {
+  .header__content {
+    padding: 50px;
+
+    background: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1920.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
+  }
+
+  .footer__content {
+    background: linear-gradient(#0a0e34ef, #0a0e34ef),
+      url("../images/game_1920.jpg") fixed #0a0e34ef top no-repeat;
+    background-size: cover;
+  }
+
+  .header__logo__text {
+    max-width: 11.875rem;
+    margin-top: inherit;
+  }
+
+  .google__app__button, .ios__app__button {
+    max-width: 19.375rem;
+  }
+
+  .be__recruited {
+    margin-top: 18.125rem;
+    margin-left: 8.75rem;
+
+    font-size: 6.1948rem;
+  }
+
+  .play__college__sports {
+    margin-bottom: 4.75rem;
+    margin-right: 10vw;
+    margin-left: 14vw;
+    align-self: flex-end;
+
+    font-size: 5.625rem;
+  }
+
+  .section__athlets {
+    padding-left: 20.31vw;
+    padding-right: calc(10.1vw - 1.5rem);
+
+    background-image: linear-gradient(#ffffff 49%, #f5f4f9 49%, #f5f4f9 73%, #5e3db3 73%);
+  }
+
+  .header__athlets {
+    margin-bottom: 6.25rem;
+    margin-top: 5.1rem;
+    margin-left: 30vw;
+  }
+
+  .picture__athlets {
+    margin-right: 3rem;
+    margin-top: -18vh;
+  }
+
+  .section__players {
+    padding-left: calc(9.9vw - 1.5rem);
+    padding-right: 6.5vw;
+
+    background-image: linear-gradient(#ffffff 53%, #f5f4f9 53%, #f5f4f9 76%, #090a36 76%);
+  }
+
+  .header__players {
+    margin-bottom: 10.19vh;
+  }
+
+  .picture__players {
+    margin-top: -26vh;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  dd {
+    font-size: 1.25rem;
+  }
+
+  .connection__dd, .collaboration__dd {
+    margin-bottom: 6.85rem;
+  }
+
+  .section__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card__picture {
+    flex-basis: 50%;
+    margin: inherit;
+  }
+
+  .card__number {
+    align-self: center;
+    margin-left: -4rem;
+    margin-top: -4rem;
+    margin-right: 1rem;
+    margin-bottom: inherit;
+  }
+
+  .card__text {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card__header {
+    margin: 0;
+  }
+
+  .card:nth-child(1) {
+    order: 1;
+  }
+
+  .card:nth-child(2) {
+    order: 2;
+  }
+
+  .card:nth-child(3) {
+    order: 3;
+  }
+
+  .card:nth-child(4) {
+    order: 6;
+
+  }
+
+  .card:nth-child(5) {
+    order: 5;
+    margin-right: -7rem;
+  }
+
+  .card:nth-child(6) {
+    order: 4;
+    margin-left: 2vw;
+  }
+
+  .card:nth-child(7) {
+    order: 7;
+  }
+
+  .card:nth-child(8) {
+    order: 8;
+  }
+
+  .card:nth-child(9) {
+    order: 9;
+  }
+
+  .footer__paragraph {
+    margin: inherit;
+
+    font-size: 1.875rem;
+  }
+
+  .footer__download__app {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 12.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__logo__image {
+    max-width: 8.43rem;
+    flex-basis: 15%;
+    margin-top: inherit;
+    margin-right: 2.75rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .footer__header {
+    margin-top: inherit;
+  }
+
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__logo__text {
+    max-width: 11.75rem;
+    margin-top: 12.5rem;
+    margin-bottom: 2.875rem;
+  }
+
 }
