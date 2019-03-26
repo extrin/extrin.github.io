@@ -568,6 +568,49 @@ dt {
     margin-bottom: 6.85rem;
   }
 
+  .section__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .card__picture {
+    flex-basis: 50%;
+    margin: inherit;
+  }
+
+  .card__number {
+    align-self: center;
+    margin-left: -4rem;
+    margin-top: -4rem;
+  }
+
+  .card__text {
+    flex-basis: 45.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .card__header {
+    margin: inherit;
+  }
+
+  .card__text, .card__number, .card__picture {
+    order: initial;
+  }
+
+  .card__text:nth-of-type(2) {
+    order: 6;
+  }
+
+  .card__picture:nth-of-type(2) {
+    order: 4;
+  }
+
   .footer__paragraph {
     margin: inherit;
     font-size: 1.875rem;
