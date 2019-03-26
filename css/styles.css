@@ -328,6 +328,10 @@ dt {
     border-radius: 3em;
   }
 
+  .ios__app__button {
+    margin-right: 2.5rem;
+  }
+
   .apple__logo, .google__logo {
     flex-basis: 3em;
     margin-right: 1em;
@@ -469,7 +473,7 @@ dt {
 
   .buttons__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .header__content {
@@ -486,6 +490,7 @@ dt {
 
 @media (min-width: 961px) {
   .header__content {
+    padding: 50px;
     background-image: linear-gradient(#0a0e34ef, #0a0e34ef), url("../images/football_1920.jpg");
   }
 
@@ -494,15 +499,26 @@ dt {
       url("../images/game_1920.jpg");
   }
 
+  .header__logo__text {
+    max-width: 11.875rem;
+    margin-top: inherit;
+  }
+
   .google__app__button, .ios__app__button {
     max-width: 19.375rem;
   }
 
   .be__recruited {
+    margin-top: 18.125rem;
+    margin-left: 8.75rem;
     font-size: 6.1948rem;
   }
 
   .play__college__sports {
+    margin-bottom: 4.75rem;
+    margin-right: 10vw;
+    margin-left: 14vw;
+    align-self: flex-end;
     font-size: 5.625rem;
   }
 
