@@ -522,6 +522,25 @@ dt {
     font-size: 5.625rem;
   }
 
+  .section__athlets {
+    padding-left: 20.31vw;
+    padding-right: calc(10.1vw - 1.5rem);
+
+    background-image: linear-gradient(#ffffff 49%, #f5f4f9 49%, #f5f4f9 73%, #5e3db3 73%);
+  }
+
+  .header__athlets {
+    width: 100%;
+    margin-bottom: 6.25rem;
+    margin-top: 5.1rem;
+    margin-left: 30vw;
+  }
+
+  .picture__athlets {
+    margin-right: 3rem;
+    margin-top: -18vh;
+  }
+
   h3 {
     font-size: 2.25rem;
   }
