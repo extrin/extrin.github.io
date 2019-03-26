@@ -541,12 +541,31 @@ dt {
     margin-top: -18vh;
   }
 
+  .section__players {
+    padding-left: calc(9.9vw - 1.5rem);
+    padding-right: 6.5vw;
+
+    background-image: linear-gradient(#ffffff 53%, #f5f4f9 53%, #f5f4f9 76%, #090a36 76%);
+  }
+
+  .header__players {
+    margin-bottom: 10.19vh;
+  }
+
+  .picture__players {
+    margin-top: -26vh;
+  }
+
   h3 {
     font-size: 2.25rem;
   }
 
   dd {
     font-size: 1.25rem;
+  }
+
+  .connection__dd, .collaboration__dd {
+    margin-bottom: 6.85rem;
   }
 
   .footer__paragraph {
